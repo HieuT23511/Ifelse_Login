@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Lesson 2</title>
+</head>
+<body>
+<h2>Login</h2>
+<input type="text" placeholder="Username" id="username">
+<br>
+<input type="password" placeholder="Password" id="pass">
+<button type="button" onclick="submit()">Login</button>
+<script>
+  // let username = prompt('Input username');
+  // if (username === 'admin'){
+  //     let password = prompt('Input password');
+  //     if (password ==='TheMaster'){
+  //         alert('Welcome')
+  //     }
+  //     else if (password == null){
+  //         alert('Cancelled')
+  //     }
+  //     else {
+  //         alert('Wrong password')
+  //     }
+  // }
+  // else if (username == null){
+  //     alert('cancelled')
+  // }
+  // else {
+  //     alert("I don't know you")
+  // }
+  function submit() {
+      let username = document.getElementById('username').value;
+      if (username === 'admin'){
+          let password = document.getElementById('pass').value;
+          if (password ==='TheMaster'){
+              alert('Welcome')
+          }
+          else if (password == null){
+              alert('Cancelled')
+          }
+          else {
+              alert('Wrong password')
+          }
+      }
+      else if (username == null){
+          alert('cancelled')
+      }
+      else {
+          alert("I don't know you")
+      }
+  }
+
+</script>
+</body>
+</html>
